@@ -1,0 +1,146 @@
+/* Set up the main font and background color */
+h1 {
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif; /* Headings font */
+}
+body {
+  font-family: 'Lato', Arial, sans-serif; /* Body text font */
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* Better line spacing for readability */
+}
+/* Make headings use a different font */
+h2, button {
+  font-family: 'Lato', Arial, sans-serif; /* Subheadings font */
+  font-weight: normal;
+}
+
+
+/* Header styles */
+header {
+  background-color: white;
+  padding: 20px 10px; /* Smaller padding for small screens */
+  text-align: center; /* Center logo on small screens */
+}
+
+/* Logo image size */
+.logo {
+  height: 120px; /* Smaller default for better mobile fit */
+  max-width: 90vw; /* Never overflow screen */
+  width: auto;
+}
+
+/* Hero section styles */
+.hero {
+  background-color: #f5c241;
+  padding: 30px 10px; /* Smaller padding for small screens */
+  text-align: center;
+}
+
+/* Hero text styles */
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Hero heading */
+.hero-text h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Hero paragraph */
+.hero-text p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Call-to-action button */
+.cta-button {
+  background-color: #4ba3f2;
+  color: black;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hero image container */
+.hero-image {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Hero image styles */
+.hero-image img {
+  width: 100%; /* Image fills container */
+  height: auto; /* Keep image shape */
+  border-radius: 12px;
+  display: block;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Responsive styles for tablets and phones */
+@media (max-width: 768px) {
+  .logo {
+    height: 80px; /* Make logo smaller on small screens */
+  }
+  .hero-text h1 {
+    font-size: 1.3em; /* Smaller heading */
+  }
+  .cta-button {
+    padding: 12px 18px;
+    font-size: 0.95em;
+  }
+  .hero-image {
+    max-width: 100%;
+  }
+  .hero-text {
+    padding: 0 10px; /* Add some side padding */
+  }
+}
+
+/* Extra small screens (like phones) */
+@media (max-width: 480px) {
+  .logo {
+    height: 60px;
+  }
+  .hero-text h1 {
+    font-size: 1em;
+  }
+  .hero-text p {
+    font-size: 1em;
+  }
+  .cta-button {
+    padding: 10px 12px;
+    font-size: 0.9em;
+  }
+}
+
+/* Style for the CTA button */
+.cta-button {
+  background-color: #4ba3f2; /* Light blue */
+  color: black;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s; /* Smooth color change */
+}
+
+/* Make the button a darker blue when hovered */
+.cta-button:hover {
+  background-color: #2176bd; /* Darker blue */
+}

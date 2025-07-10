@@ -1,47 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Lato:400,700&display=swap" rel="stylesheet">
+  <!-- Link to my CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity: Water</title>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header>
+    <img class="logo" src="img/Charity_Water_Logo.png"alt="charity: water logo" />
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Make Every Single Drop Count: <br>100% of Your Donation Brings Clean Water to Communities in Need</h1>
+      <h2>Join thousands of young, bright activists who demand transparency and real impact—because access to clean water is a basic human right worth fighting for.</h2>
+      <button class="cta-button" id="ctaBtn">Join the Clean Water Movement!</button>
+    </div>
+    <div class="hero-image">
+      <img src= "img/Boy joyfully drinking a glass of water.png" alt="Child drinking clean water" />
+    </div>
+  </section>
+  <script>
+  // This script scrolls the button to the center when clicked
+  document.getElementById('ctaBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default button behavior
+    // Scroll the button to the center of the screen
+    this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>
 </body>
 </html>
+
+
